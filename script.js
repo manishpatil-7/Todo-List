@@ -12,9 +12,11 @@ document.getElementById('tasklist').innerHTML=''
     {
       let li=document.createElement('li')
       li.innerHTML=tasks[i]['name']
+      li.innerHTML = `${tasks[i]['priority']}. ${tasks[i]['name']}`;
       document.getElementById('tasklist').appendChild(li)
     }
-
+    document.getElementById("name").value = '';
+    document.getElementById("priority").value = '';
 
 
 }
